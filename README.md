@@ -1,9 +1,7 @@
-# SteemSites
-[![Travis](https://travis-ci.org/Yhozen/steemsites.svg?branch=master&style=flat-square)](https://yhozen.github.io/steemsites/)
-[![Code Climate](https://codeclimate.com/github/Yhozen/steemsites/badges/gpa.svg?style=flat-square)](https://codeclimate.com/github/Yhozen/steemsites)
+# YARB
+[![Code Climate](https://codeclimate.com/github/Yhozen/react-webpack-boilerplate/badges/gpa.svg?style=flat-square)](https://codeclimate.com/github/Yhozen/react-webpack-boilerplate)
 
-Make websites without a host nor a domain, powered by Steem blockchain and WebTorrent.
-webpack configuration forked from [React webpack boilerplate](https://github.com/vasanthk/react-es6-webpack-boilerplate)
+Yet Another React Boilerplate for react projects with ES2017 syntax and hot reloader using Webpack 3. Works like create-react-app but it's just [webpack](https://github.com/webpack/webpack) with [babel](https://github.com/babel/babel). Project based on [vasanthk boilerplate](https://github.com/vasanthk/react-es6-webpack-boilerplate) with some updates and additions
 
 ### Usage
 
@@ -12,25 +10,6 @@ npm install
 npm start
 Open http://localhost:5000
 ```
-To get the magnet link simply go to instant.io and drop the whole folder that contain the webpage. An index.html is needed
 
-### Know issues
-
-Code inside a script tag won't be able to access to previous global variables without 'window'. 
-
-IE: 
-``` 
-$(document).ready(function(){
-  $('.parallax').parallax();
-}); 
-``` 
-won't work but
-    
-```
-var $ = window.$
-$(document).ready(function(){
-  $('.parallax').parallax();
-}); 
-```
-will work
+Change src/App.js at your will, you can import css directly or even import images (jpg, jpeg, png or svg). To build the bundle just run ```npm run build``` and copy the index.html as well as the static folder.
 
