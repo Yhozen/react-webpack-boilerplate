@@ -3,7 +3,6 @@
   "env": {
       "development": {
           "plugins": [
-            "transform-react-inline-elements",
             ["react-transform", {
               "transforms": [{
                 "transform" : "react-transform-hmr",
@@ -12,6 +11,9 @@
           }]
         }]
       ]
+    },
+    "production": {
+      "plugins": [ "transform-react-inline-elements" ]
     }
   }
 }
